@@ -30,7 +30,12 @@ module BasicApisLab
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+<<<<<<< HEAD
     # config.active_record.raise_in_transactional_callbacks = true
     # config.public_file_server.enabled = true
+=======
+    config.active_record.raise_in_transactional_callbacks = true
+    config.public_file_server.enabled = true
+>>>>>>> 2e3ec431a7dd4b7759a383effbdd34f7d382639a
   end
 end

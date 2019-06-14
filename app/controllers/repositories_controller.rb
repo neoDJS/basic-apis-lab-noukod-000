@@ -21,12 +21,19 @@ class RepositoriesController < ApplicationController
       @error = body["message"]
     end
 
+<<<<<<< HEAD
     # rescue Faraday::ConnectionFailed
     #   @error = "There was a timeout. Please try again."
     # end
 
     # puts @repos.inspect
     render :search
+=======
+    rescue Faraday::ConnectionFailed
+      @error = "There was a timeout. Please try again."
+    end
+    render 'search'
+>>>>>>> 2e3ec431a7dd4b7759a383effbdd34f7d382639a
   end
 
 end
